@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+            <img src="./images/menu.svg" alt="" />
+          </span>
+          <a class="logo" href="/">
+            P&K
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="o-nas.html" class="navbar-link">o nas</a>
+            </li>
+            <li class="navbar-item">
+              <a href="auta-nowe.html" class="navbar-link">Auta nowe</a>
+            </li>
+            <li class="navbar-item">
+              <a href="auta-uzywane.html" class="navbar-link">Auta używane</a>
+            </li>
+            <li class="navbar-item">
+              <a href="czesci.html" class="navbar-link">Częsci</a>
+            </li>
+            <li class="navbar-item">
+              <a href="car-spa.html" class="navbar-link">car spa</a>
+            </li>
+            <li class="navbar-item">
+              <a href="komisy.html" class="navbar-link">Komisy</a>
+            </li>
+            <li class="navbar-item">
+              <a href="ubezpieczenia.html" class="navbar-link">Ubezpieczenia</a>
+            </li>
+            <li class="navbar-item">
+              <a href="nasze-marki.html" class="navbar-link">Marki</a>
+            </li>
+            <li class="navbar-item">
+              <a href="kontakt.html" class="navbar-link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--  -->
+    <div class="page-header">
+      <div class="container">
+        <h2>KONTAKT</h2>
+        <div class="hr"></div>
+      </div>
+    </div>
+    <section class="page-section contact">
+      <div class="container">
+        <div class="row">
+          <div class="left">
+            <h4>NAPISZ DO NAS</h4>
+            <div class="hr"></div>
+
+            <form action="">
+              <div class="form-section">
+                <label class="form-label" for="name">Imię</label>
+                <input class="form-input" type="text" id="name" />
+              </div>
+              <div class="form-section">
+                <label class="form-label" for="surname">Nazwisko</label>
+                <input class="form-input" type="text" id="surname" />
+              </div>
+              <div class="form-section">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" />
+              </div>
+              <div class="form-section">
+                <label class="form-label" for="text">Wiadomość</label><br />
+                <textarea class="form-input" id="text"></textarea>
+              </div>
+              <div class="form-section">
+                <label class="form-label" for="">Województwo</label><br />
+                <select name="wojewodztwo" id="" class="form-select">
+                  <option value="wlkp">Wielkopolskie</option>
+                  <option value="Pomorskie">Pomorskie</option>
+                  <option value="Malopolskie">Małopolskie</option>
+                  <option value="Dolnoslaskie">Dolnośląskie</option>
+                </select>
+              </div>
+              <div class="form-section">
+                <label class="form-label" for="">Akcja</label> <br />
+
+                <label
+                  ><input type="radio" name="action" value="buyCar" /> Kupno
+                  auta</label
+                >
+                <label
+                  ><input type="radio" name="action" value="info" /> Informacje
+                  o aucie</label
+                >
+                <label
+                  ><input type="radio" name="action" value="buyParts" /> Kupno
+                  częsci</label
+                >
+              </div>
+              <div class="form-section">
+                <label class="form-label" for="">INTERESUJĄCE AUTA</label>
+                <br />
+                <label
+                  ><input name="car" type="checkbox" value="mazda" />
+                  Mazda</label
+                >
+                <br />
+                <label
+                  ><input name="car" type="checkbox" value="BMW" /> BMW</label
+                >
+                <br />
+                <label
+                  ><input name="car" type="checkbox" value="audi" /> audi</label
+                >
+                <br />
+                <label
+                  ><input name="car" type="checkbox" value="opel" /> opel</label
+                >
+              </div>
+
+              <div class="form-section">
+                <input class="btn form-submit" type="submit" value="WYŚLIJ" />
+              </div>
+            </form>
+          </div>
+          <div class="right">
+            <h4>O MNIE</h4>
+            <div class="hr"></div>
+            <div class="aboutme">
+              <div class="name">Patryk Kerber</div>
+              <div class="myIndex">Nr Albumu: 140597</div>
+              <div class="school">Politechnika Poznańska</div>
+              <div class="direction">Energetyka</div>
+              <div class="sem">Sem. 4</div>
+              <div class="group">Grupa: En-2/L-4</div>
+              <div class="email">
+                Email:
+                <a href="mailto:patryk.kerber@student.put.poznan.pl" class=""
+                  >patryk.kerber@student.put.poznan.pl
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <footer>
+      <div class="container">
+        <div class="footer-row">
+          <div class="date"></div>
+          <div><a href="+48777777777">+48 777 777 777</a></div>
+          <div>&copy;2020 Komis samochodowy P&K</div>
+          <div class="clock"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
