@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+            <img src="./images/menu.svg" alt="" />
+          </span>
+          <div class="logo">
+            <a href="index.html" class="">
+              <canvas class="" id="logo" width="50" height="50"> </canvas>
+            </a>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="o-nas.html" class="navbar-link">o nas</a>
+            </li>
+            <li class="navbar-item">
+              <a href="auta-nowe.html" class="navbar-link">Auta nowe</a>
+            </li>
+            <li class="navbar-item">
+              <a href="auta-uzywane.html" class="navbar-link">Auta używane</a>
+            </li>
+            <li class="navbar-item">
+              <a href="czesci.html" class="navbar-link">Częsci</a>
+            </li>
+            <li class="navbar-item">
+              <a href="car-spa.html" class="navbar-link">car spa</a>
+            </li>
+            <li class="navbar-item">
+              <a href="komisy.html" class="navbar-link">Komisy</a>
+            </li>
+            <li class="navbar-item">
+              <a href="ubezpieczenia.html" class="navbar-link">Ubezpieczenia</a>
+            </li>
+            <li class="navbar-item">
+              <a href="nasze-marki.html" class="navbar-link">Marki</a>
+            </li>
+            <li class="navbar-item">
+              <a href="kontakt.html" class="navbar-link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--  -->
+    <div class="page-header">
+      <div class="container">
+        <h2>KALKULATOR OHMA</h2>
+        <div class="hr"></div>
+      </div>
+    </div>
+    <section class="page-section calc">
+      <div class="container">
+          <p>Kliknij w Literkę którą chcesz obliczyć</p>
+          <div class="map">
+<img src="images/ohm.jpg" usemap="#image-map">
+
+<map name="image-map">  
+    <area data-target="u" class="calculator-type" target="" alt="napięcie" title="napięcie"  coords="137,119,367,118,254,24" shape="poly">
+    <area data-target="i" class="calculator-type" target="" alt="natężenie" title="natężenie"  coords="136,118,28,206,252,210,250,122,249,122" shape="poly">
+    <area data-target="r" class="calculator-type" target="" alt="opór" title="opór"  coords="253,121,256,208,477,210,366,120" shape="poly">
+</map>
+          </div>
+          <div class="calc-area">
+
+     
+          <div id="u" class="inputs-type">
+           <div class="form-section">
+            <label class="form-label" for="surname">I</label>
+            <input class="form-input calculator-input i_val"  data-type="u" data-v="i" type="number" id="" />
+          </div>
+          <span> * </span>
+          <div class="form-section">
+            <label class="form-label" for="surname">R</label>
+            <input class="form-input calculator-input r_val" data-type="u" data-v="r" type="number" id="" />
+          </div>
+          <br>
+        </div>
+        <div id="i" class="inputs-type">
+            <div class="form-section">
+             <label class="form-label" for="surname">U</label>
+             <input class="form-input calculator-input u_val" data-type="i" data-v ="u"  type="number" id="" />
+           </div>
+           <span> / </span>
+           <div class="form-section">
+             <label class="form-label" for="surname">R</label>
+             <input class="form-input calculator-input r_val" data-type="i"  data-v ="r" type="number" id="" />
+           </div>
+           <br>
+         </div>
+         <div id="r" class="inputs-type">
+            <div class="form-section">
+             <label class="form-label" for="surname">U</label>
+             <input class="form-input calculator-input u_val"  data-type="r"  data-v="u"type="number" id="" />
+           </div>
+           <span> / </span>
+           <div class="form-section">
+             <label class="form-label" for="surname">I</label>
+             <input class="form-input calculator-input i_val"  data-type="r" data-v="i" type="number" id="" />
+           </div>
+           <br>
+         </div>
+            <div class="result_box"></div>
+        <button id="result" class="result">Oblicz</button>
+    </div>
+      </div>
+    </section>
+    <!--  -->
+    <footer>
+      <div class="container">
+        <div class="footer-row">
+          <div class="date"></div>
+          <div><a href="+48777777777">+48 777 777 777</a></div>
+          <div>&copy;2020 Komis samochodowy P&K</div>
+          <div class="clock"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="calc.js"></script>
+  </body>
+</html>
