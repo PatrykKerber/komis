@@ -60,7 +60,7 @@ document.querySelector('#result').addEventListener('click',function(){
     
     case 'r':
       result = u_val/i_val;
-      end = '[Ω] om';
+      end = '[Ω] ohm';
       break;
     
     case 'i':
